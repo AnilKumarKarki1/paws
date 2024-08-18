@@ -64,7 +64,7 @@ The Paws and Claws Rescue website is designed to facilitate the adoption of pets
    git clone https://github.com/your-username/paws-and-claws-rescue.git
 2. Navigate to the project directory:
    ```sh
-   cd paws-and-claws-rescue
+   cd paws
 3. Open the index.html file in your web browser to view the website.
 
 4. Edit HTML, CSS, and JavaScript files as needed.
