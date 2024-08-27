@@ -61,7 +61,7 @@ The Paws and Claws Rescue website is designed to facilitate the adoption of pets
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/paws-and-claws-rescue.git
+   git clone https://github.com/AnilKumarKarki1/paws
 2. Navigate to the project directory:
    ```sh
    cd paws
