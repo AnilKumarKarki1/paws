@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #4169E1;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4169E1;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.services, .adopt-me, .testimonials, .subscription {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2, .adopt-me h2, .testimonials h2, .subscription h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.service-cards, .pet-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card, .pet-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.service-card h3, .pet-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.subscription form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.subscription input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.subscription button {
+    padding: 10px 20px;
+    background-color: #4169E1;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #4169E1;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .service-cards, .pet-cards {
+        flex-direction: column;
+    }
+
+    .service-card, .pet-card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .testimonial {
+        width: 90%;
+    }
+}
