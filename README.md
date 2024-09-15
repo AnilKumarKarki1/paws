@@ -1,70 +1,70 @@
-# Paws and Claws Rescue Website
+# Paws and Claws Rescue
 
-## Overview
-
-The Paws and Claws Rescue website is designed to facilitate the adoption of pets and provide information about the services offered by the rescue organization. The site features sections on services, adoptable pets, testimonials, and subscription for updates.
+## Description
+**Paws and Claws Rescue** is a pet rescue and adoption website designed to help users adopt pets, learn about pet care, and explore various FAQs related to pets. It includes an admin panel to manage pets, FAQs, and adoption requests.
 
 ## Project Structure
+The project is organized as follows:
 
-### Directories and Files
+### 1. **Actions** (`/actions/`)
+Contains PHP scripts that handle various form submissions and requests for the website, including:
+- **create\_actions**: For creating various entities (pet, FAQ, adoption request).
+- **delete\_actions**: For deleting entities.
+- **update\_actions**: For updating the details of entities.
+- **get\_details**: Fetches details for specific entities (company, pet, FAQ).
+- **Authentication actions**: Login, register, logout, etc.
 
-- **`index.php`** - Home page
-- **`about.php`** - About page
-- **`contact.php`** - Contact page
-- **`adopt.php`** - Adoption page
-- **`public/assets/css/style.css`** - Main stylesheet
-- **`public/assets/js/script.js`** - Main JavaScript file
-- **`public/assets/images/`** - Directory containing images for the website
+### 2. **Config** (`/config/`)
+Contains configuration files for database connections and settings.
 
-### Key Features
+### 3. **Public** (`/public/`)
+- **assets**: Stores static files such as images, CSS, and JavaScript.
+- **uploads**: Contains uploaded files, such as pet photos.
+- **views**: Holds all user-facing pages of the website, including pages for:
+  - **Adoption**: List and manage pets available for adoption.
+  - **Company**: Information about the rescue organization.
+  - **FAQ**: Frequently asked questions related to adoption and pet care.
+  - **Subscription**: Pages for user subscriptions.
 
-1. **Navigation Bar**
-   - Responsive navigation with active link highlighting based on the current page.
-   - Includes company logo and navigation links.
+### 4. **Admin** (`/admin/`)
+Contains admin dashboard pages to manage the website content:
+- **Layout**: Common layout components like the header and footer for the admin section.
+- **Pages**: Includes pages for managing pets, FAQs, users, and more.
 
-2. **Banner Section**
-   - Promotes pet adoption with a call-to-action button.
+### 5. **Layout** (`/layout/`)
+The common layout components for the user-facing part of the website:
+- **header.php**: Sitewide header navigation.
+- **footer.php**: Sitewide footer with contact and social links.
+- **navbar.php**: Navigation bar for various pages like adoption, FAQs, etc.
 
-3. **Services Section**
-   - Lists various services offered by the rescue organization with icons and descriptions.
+### 6. **404 Page** (`404.php`)
+Custom 404 error page for the website.
 
-4. **Adopt Me Section**
-   - Displays featured pets available for adoption with images, names, descriptions, and adoption buttons.
+### 7. **Index Pages**
+- **index.php**: Main homepage of the website.
+- **admin/index.php**: Main dashboard page for the admin section.
 
-5. **Testimonials Section**
-   - Showcases video testimonials and written feedback from clients.
+## Setup Instructions
 
-6. **Subscription Section**
-   - Allows users to subscribe to updates via email.
+### 1. **Clone the repository**
+```sh
+git clone https://github.com/AnilKumarKarki1/paws.git
+git checkout dynamic
+cd paws
+```
 
-7. **Footer**
-   - Includes quick links, subscription form, and social media icons.
+### 2. **import sql file to database**
+create a database named website & import the paws.sql file which will create necessary file along with some initial data
 
-8. **Scroll-to-Top Button**
-   - A button that appears after scrolling down the page, allowing users to return to the top.
+### 2. **Local Build*
+In the root directory
+```sh
+php -S localhost:8000  
+```
 
-## Accessibility Considerations
 
-- **ARIA Attributes:** Implemented ARIA roles and labels to enhance accessibility for screen readers.
-- **Responsive Design:** Ensured that the site is responsive and user-friendly across various devices.
-- **Form Accessibility:** Added visually hidden labels and ARIA-required attributes to improve form field accessibility.
+## External Links
+- for images in directory public/assets/images -> https://drive.google.com/drive/folders/1yf7lyFptEzHB_9c7NX7i2Fg2QJSbcL6e
 
-## Development
-
-### Prerequisites
-
-- Web Browser (e.g., Chrome, Firefox, Safari)
-- Text Editor or IDE (e.g., VSCode, Sublime Text)
-- Local Server (for testing dynamic functionalities)
-
-### Setup
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/paws-and-claws-rescue.git
-2. Navigate to the project directory:
-   ```sh
-   cd paws
-3. Open the index.php file in your web browser to view the website.
-
-4. Edit HTML, CSS, and JavaScript files as needed.
+## Impportant note 
+- contains group website report and my individual report
